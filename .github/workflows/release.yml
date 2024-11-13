@@ -14,7 +14,7 @@ on:
       - master
 jobs:
   terraform_module_release:
-    if: github.repository != 'burib/terraform-aws-module-template'
+    #if: github.repository != 'burib/terraform-aws-module-template'
     uses: BuriCloud/github-workflows/.github/workflows/release.yml@main
     with:
       release-type: "terraform-module"
